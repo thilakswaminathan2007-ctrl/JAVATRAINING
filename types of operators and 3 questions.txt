@@ -1,0 +1,114 @@
+public class arithmetic{
+    public static void main(String[]args){
+        int a=10;
+        int b=5;
+        System.out.println("addition="+(a+b));
+        System.out.println("subraction="+(a-b));
+        System.out.println("multiplication="+(a*b));
+        System.out.println("division="+(a/b));
+        System.out.println("modulas="+(a%b));
+    }
+}
+    public class relational{
+    public static void main(String[]args){
+        int a=85;
+        int b=70;
+       System.out.println(a>b);
+         System.out.println(a<b);
+         System.out.println(a==b);
+         System.out.println(a<=b);
+         System.out.println(a>=b);
+         System.out.println(a!=b);
+    }
+}    
+public class logical{
+    public static void main(String[]args){
+        int age=20;
+        boolean hashid=true;
+        System.out.println(age>=18&&hashid);
+         System.out.println(age<18||hashid);
+                            System.out.println(!hashid);
+    }
+}
+public class assignment{
+    public static void main(String[]args){
+        int a=10;
+        System.out.println(a);
+        a+=5;
+        System.out.println(a);
+        a-=4;
+         System.out.println(a);
+        a*=3;
+         System.out.println(a);
+        a/=2;
+         System.out.println(a);
+        a%=6;
+    }
+}
+public class unarry{
+    public static void main(String[]args){
+        int a=10;
+        a++;
+            System.out.println(a);
+        a--;
+            System.out.println(a);
+    }
+}
+
+public class ternary{
+    public static void main(String[]args){
+        int a=80;
+        String result=(a>=35)?"pass":"fail";
+        System.out.println(result);
+    }
+}
+import java.util.Scanner;
+
+class DrivingLicence {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        String result = (age >= 18) ? "Eligible" : "Not Eligible";
+
+        System.out.println(result);
+        sc.close();
+    }
+}
+import java.util.Scanner;
+
+class EvenNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0 && num > 10) {
+            System.out.println("Even number and greater than 10");
+        } else {
+            System.out.println("Condition not satisfied");
+        }
+
+        sc.close();
+    }
+}
+import java.util.Scanner;
+
+class StudentPass {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter marks: ");
+        int marks = sc.nextInt();
+
+        System.out.print("Enter attendance percentage: ");
+        int attendance = sc.nextInt();
+
+        String result = (marks >= 40 && attendance >= 75)? "Pass" : "Fail";
+        System.out.println(result);
+        sc.close();
+    }
+}
